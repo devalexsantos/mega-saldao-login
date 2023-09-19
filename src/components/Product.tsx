@@ -11,10 +11,7 @@ export default async function Product({ sku }: ProductPros) {
   ).then((res) => res.json())
 
   return (
-    <Link
-      href={`https://login.com.br/${product.Products[0].Product.slug}`}
-      target="_blank"
-    >
+    <Link href={`https://login.com.br/${product.Products[0].Product.slug}`} target='_blank'>
       <div className="bg-white shadow-sm rounded-xl w-[300px] h-[350px] flex flex-col justify-center items-center text-center cursor-pointer p-3 items-start hover:scale-105 transition-all ease-in-out">
         <img
           src={product.Products[0].Product.ProductImage[0].https}

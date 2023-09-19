@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "lint": "eslint src --ext .tsx,.ts",
     "lint:fix": "eslint src --ext .tsx,.ts --fix"
   },
@@ -29,6 +30,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^13.5.1",
     "@rocketseat/eslint-config": "^2.1.0",
     "eslint": "^8.49.0"
   }
